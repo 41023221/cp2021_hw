@@ -1359,7 +1359,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="random">random</button></p>
+<p><button id="random">random</button><button id="random2">random2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -1444,6 +1444,9 @@ class button2:
 random_url = "https://gist.githubusercontent.com/41023221/ae31fb6f38e688316151848963d7bf22/raw/a046fc1b64702d1cfd56dee5d2d2721abc13688e/random.py"
 random = button2(random_url)
 doc["random"].bind('click', random.do)
+random2_url = "https://gist.githubusercontent.com/41023221/55e5100e1fdcdf0b080e75f75f2aff80/raw/9b9c212ebe7ee8b6950404b1c1d1af9f746eaddf/random2.py"
+random2 = button2(random2_url)
+doc["random2"].bind('click', random2.do)
 </script>
 </p><h1>Final Project</h1>
 <p>Final Project 佔學期成績 30%</p>
