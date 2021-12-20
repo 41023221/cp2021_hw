@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a><li><a href='Server.html'>Server</a></li></ul><li><a href='W10.html'>W10</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li class='has-children'><a href='Algorithms.html'>Algorithms</a><ul class='dropdown'><li><a href='Practice1.html'>Practice1</a><li><a href='Practice2.html'>Practice2</a><li><a href='Practice3.html'>Practice3</a></li></ul><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a><li><a href='Math.html'>Math</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='w13.html'>w13</a></li></ul><li><a href='Final Project.html'>Final Project</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='英打.html'>英打</a><li><a href='中打.html'>中打</a><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a><li><a href='Server.html'>Server</a></li></ul><li class='has-children'><a href='W10.html'>W10</a><ul class='dropdown'><li class='has-children'><a href='Practice1.html'>Practice1</a><ul class='dropdown'><li><a href='Practice2.html'>Practice2</a><li><a href='Practice3.html'>Practice3</a></li></ul><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a><li><a href='Math.html'>Math</a><li><a href='run_hw3.html'>run_hw3</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='w13.html'>w13</a></li></ul><li><a href='Final Project.html'>Final Project</a></li>
                       </ul>
                 </nav>
               </div>
@@ -144,7 +144,7 @@ img.add_border {
 <p>從 1 累加到 100:</p>
 <p><button id="add1to100">1 add to 100</button></p>
 <p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
-<!-- 導入 brython 程式庫 -->
+<pre><!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- 啟動 Brython -->
@@ -153,6 +153,7 @@ window.onload=function(){
 brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
 }
 </script>
+</pre>
 <p><!-- 導入 FileSaver 與 filereader --></p>
 <p>
 <script src="./../cmsimde/static/ace/FileSaver.min.js" type="text/javascript"></script>
@@ -212,7 +213,7 @@ doc['clear_bd1'].bind('click', clear_bd1)
 run1()
 </script>
 <!-- 第 1 區內建程式 #################################### 第 1 區內建程式結束--></p>
-<!-- 第 1 區程式 ########################################### 第 1 區程式開始-->
+<pre><!-- 第 1 區程式 ########################################### 第 1 區程式開始--></pre>
 <p><!-- add 1 to 100 開始 -->
 <script type="text/python3">
 from browser import document as doc
@@ -240,7 +241,7 @@ doc["add1to100"].bind('click', add)
 </script>
 </p>
 <p><!-- add 1 to 100 結束--></p>
-<!-- editor1 開始 -->
+<pre><!-- editor1 開始 --></pre>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
@@ -256,9 +257,11 @@ doc["add1to100"].bind('click', add)
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
 <div id="brython_div1"></div>
-<!-- editor1 結束 --><hr/><!-- 第 1 區程式 ########################################### 第 1 區程式結束 -->
+<pre><!-- editor1 結束 --></pre>
+<hr/>
+<pre><!-- 第 1 區程式 ########################################### 第 1 區程式結束 --></pre>
 <p></p>
-<!-- 第 2 區程式 ########################################### 第 2 區程式開始-->
+<pre><!-- 第 2 區程式 ########################################### 第 2 區程式開始--></pre>
 <p>查驗輸入字串程式:</p>
 <p><button id="check_input">查驗輸入字串</button></p>
 <p><!-- 判斷輸入字串是否aA1$, 且至少 8 個字元-開始 -->
@@ -297,7 +300,7 @@ run1()
 </script>
 </p>
 <p><!-- 判斷輸入字串是否aA1$, 且至少 8 個字元-結束--></p>
-<!-- editor2 開始 -->
+<pre><!-- editor2 開始 --></pre>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor2" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
@@ -313,9 +316,9 @@ run1()
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
 <div id="brython_div2"></div>
-<!-- editor2 結束 -->
+<pre><!-- editor2 結束 --></pre>
 <p></p>
-<!-- 第 3 區程式 ########################################### 第 3 區程式開始-->
+<pre><!-- 第 3 區程式 ########################################### 第 3 區程式開始--></pre>
 <p>Leetcode 13: <a href="https://leetcode.com/problems/roman-to-integer/">https://leetcode.com/problems/roman-to-integer/</a> (<a href="https://www.notion.so/Array-String-9be4f4243ca94603ae980f78083bf595#c2b8e6f6d12d4968a1d6524e74f4c2e6">Solution</a>)</p>
 <p></p>
 <p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
